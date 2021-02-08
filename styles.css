@@ -41,9 +41,10 @@ h2 {
 }
 
 nav {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(139,139,139,1) 25%, rgba(139,139,139,1) 78%, rgba(255,255,255,1) 98%);
+  background: rgb(139,139,139);
+  background: linear-gradient(90deg, rgba(139,139,139,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(139,139,139,1) 100%);
   justify-content: center;
+  opacity: 80%;
   width: 100%;
 }
 
@@ -165,8 +166,33 @@ footer {
 }
 
 .feature-section {
+  flex-wrap: wrap;
   margin: 5px;
   width: 45%;
+}
+
+.feature-p {
+  color: #000000;
+  padding: 15px;
+}
+
+.sounds-span {
+  color: #520486;
+  font-size: 20px;
+}
+
+.feature-img {
+  padding: 5px;
+  width: 98%;
+}
+
+.feature-ul {
+  padding: 15px;
+  width: 100%;
+}
+
+.feature-li {
+  width: 100%;
 }
 
 .table-section {
