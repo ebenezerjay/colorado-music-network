@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>CMN: Venues</title>
+  </head>
+  <body>
+    <header class="flex">
+      <a href="./index.html"><img src="./images/co-mtns6.jpeg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
+      <div class="flex headings-div">
+        <h1>Colorado Music Network</h1>
+        <h2 class="header-h2">Database of Venues in CO</h2>
+      </div>
+      <nav class="flex header-nav">
+        <ul class="flex header-nav-ul">
+          <li><a href="./bands.html">Bands/Artists</a></li>
+          <li><a href="./venues.html">Venues</a></li>
+          <li>About</li>
+          <li>News</li>
+        </ul>
+      </nav>
+    </header>
+    <aside class="flex">
+      <h3 class="search-bands-h3">Search Artists</h3>
+      <form action="" class="flex search-form">
+        <input type="text" placeholder="band/artist">
+        <input type="text" placeholder="location">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </aside>
+    <main class="flex">
+      <div class="flex form-div">
+        <form action="" class="flex submit-venue-form">
+          <input type="text" class="venue-name-input" placeholder="Enter Venue name" required>
+          <input type="text" class="venue-location-input" placeholder="Enter address of venue" required>
+          <input type="url" class="venue-website-input" placeholder="Enter the venue website">
+          <input type="text" class="venue-description-input" placeholder="Enter breif description">
+          <button type="submit" class="venue-submit-button">Enter Venue Info</button>
+        </form>
+      </div>
+      <section class="flex table-section">
+        <h2 class="table-h2">Venues</h2>
+        <table class="venues-table flex" id="venues-table">
+          <thead>
+
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="flex">
+      
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>

@@ -30,9 +30,6 @@ h1 {
   box-shadow: grey 4px 4px 4px;
   color: black;
   font-size: 4em;
-  /* position: absolute;
-  top: 5px;
-  left: 23%; */
   width: 100%;
 }
 
@@ -103,6 +100,13 @@ footer {
   grid-area: footer;
 }
 
+.bands-h2 {
+  color: rgb(255, 255, 255);
+  height: fit-content;
+  text-align: center;
+  width: 100%;
+}
+
 .header-img {
   width: 100%;
 }
@@ -141,7 +145,7 @@ footer {
 .submit-venue-form {
   flex-wrap: wrap;
   justify-content: center;
-  width: 49%;
+  width: 99%;
 }
 
 .search-form {
@@ -158,8 +162,8 @@ footer {
 
 .artist-submit-button,
 .venue-submit-button {
-  background-color: #FF9A3B;
-  color: black;
+  background-color: #ffffff;
+  color: #000000;
   cursor: pointer;
   height: 39px;
   width: 25%;
@@ -214,7 +218,7 @@ footer {
 .form-div {
   /* animation: form-show 1s ease-in 1 normal; */
   flex-wrap: wrap;
-  width: 100%;
+  width: 70%;
 }
 
 /* @keyframes form-show {
