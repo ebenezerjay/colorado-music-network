@@ -176,6 +176,10 @@ footer {
   width: 50%;
 }
 
+.artist-description-textarea {
+  width: 100%;
+}
+
 .artist-submit-button,
 .venue-submit-button {
   background-color: #ffffff;

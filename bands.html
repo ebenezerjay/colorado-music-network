@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="flex">
-      <a href="./index.html"><img src="./images/co-mtns6.jpeg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
+      <a href="./index.html"><img src="./co-mtns6.jpeg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
       <div class="flex headings-div">
         <h1>Colorado Music Network</h1>
         <h2 class="header-h2">Database of Artists in CO</h2>
@@ -37,12 +37,12 @@
     <main class="flex">
       <div class="flex form-div">
         <h2 class="bands-h2">Submit Artists Here</h2>
-        <form action="" method="POST" class="flex submit-artist-form">
-          <input type="text" class="artist-name-input" placeholder="Enter Band/Artist name" required>
-          <input type="text" class="artist-location-input" placeholder="What part of CO is your home?">
-          <input type="url" class="artist-website-input" placeholder="Enter artist website">
-          <input type="text" class="artist-description-input" placeholder="Enter brief description">
-          <button type="submit" class="artist-submit-button">Enter Artist Info</button>
+        <form action="" method="POST" class="flex submit-artist-form" id="submit-artist-form-id">
+          <input type="text" name="ArtistFormName" class="artist-name-input" placeholder="Enter Band/Artist name" required>
+          <input type="text" name="ArtistFormLocation" class="artist-location-input" placeholder="What part of CO is your home?">
+          <input type="url" name="ArtistFormUrl" class="artist-website-input" placeholder="Enter artist website">
+          <textarea name="ArtistFormDescription" class="artist-description-textarea" id="artist-description-id" placeholder="Enter brief description"></textarea>
+          <button type="submit" class="artist-submit-button" id="submit-artist-btn-id">Enter Artist Info</button>
         </form>
       </div>
       <section class="flex table-section">
