@@ -176,7 +176,8 @@ footer {
   width: 50%;
 }
 
-.artist-description-textarea {
+.artist-description-textarea,
+.venue-description-textarea {
   width: 100%;
 }
 

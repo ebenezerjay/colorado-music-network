@@ -11,7 +11,7 @@
   </head>
   <body>
     <header class="flex">
-      <a href="./index.html"><img src="./images/co-mtns6.jpeg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
+      <a href="./index.html"><img src="./co-mtns6.jpeg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
       <div class="flex headings-div">
         <h1>Colorado Music Network</h1>
         <h2 class="header-h2">Database of Venues in CO</h2>
@@ -36,11 +36,11 @@
     </aside>
     <main class="flex">
       <div class="flex form-div">
-        <form action="" class="flex submit-venue-form">
-          <input type="text" class="venue-name-input" placeholder="Enter Venue name" required>
-          <input type="text" class="venue-location-input" placeholder="Enter address of venue" required>
-          <input type="url" class="venue-website-input" placeholder="Enter the venue website">
-          <input type="text" class="venue-description-input" placeholder="Enter breif description">
+        <form action="" method="POST" class="flex submit-venue-form" id="submit-venue-form-id">
+          <input type="text" name="VenueFormName" class="venue-name-input" placeholder="Enter Venue name" required>
+          <input type="text" name="VenueFormLocation" class="venue-location-input" placeholder="Enter address of venue" required>
+          <input type="url" name="VenueFormUrl" class="venue-website-input" placeholder="Enter the venue website">
+          <textarea name="VenueFormDescription" class="venue-description-textarea" id="venue-description-id" placeholder="Enter brief description"></textarea>
           <button type="submit" class="venue-submit-button">Enter Venue Info</button>
         </form>
       </div>
