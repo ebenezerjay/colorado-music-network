@@ -50,10 +50,26 @@ ul {
   width: 70%;
 }
 
+h1,
+li {
+  font-family: metalista-web, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p,
+h2,
+h3 {
+  font-family: shrub, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
 li {
   align-self: center;
   color: black;
   cursor: pointer;
+  font-size: 25px;
   list-style: none;
   text-align: center;
   width: 20%;
