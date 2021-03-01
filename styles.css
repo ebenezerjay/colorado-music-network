@@ -104,12 +104,52 @@ aside {
 
 section {
   background-color: #fff;
+  color: black;
 }
 
 article {
   background-color: #fff;
   margin: 5px;
   width: 50%;
+}
+
+table {
+  border: 1px solid;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+th {
+  border: 1px solid;
+  width: 20%;
+}
+
+td {
+  border: 1px solid;
+  color: black;
+}
+
+tr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+#tr-id {
+  border: 1px solid;
+  display: flex;
+  color: black;
+}
+
+thead {
+  width: 100%;
+}
+
+tbody {
+  border: 1px solid black;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 footer {
@@ -221,6 +261,7 @@ footer {
 }
 
 .table-section {
+  flex-wrap: wrap;
   width: 96%;
 }
 
@@ -229,6 +270,30 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+.th-styles,
+.td-styles {
+  height: fit-content;
+  padding: 5px;
+  margin: 0px;
+  width: 25%;
+}
+
+/* .td-name {
+  width: 23%;
+}
+
+.td-location {
+  width: 15%;
+}
+
+.td-link {
+  width: 15%;
+}
+
+.td-description {
+  width: 40%;
+} */
 
 .section-h2,
 .article-h2 {

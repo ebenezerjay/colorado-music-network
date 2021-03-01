@@ -15,3 +15,10 @@ $("#submit-venue-form-id").submit(function(e) {
     $(".submit-venue-form").html("Thanks for submiting!  Refresh the page and you'll see it listed.");
   });
 });
+
+// gets all table data on page load
+$(document).ready(function() {
+	$.post("getData.php", function(data) {
+		$("tbody").html(data);
+	});
+});
