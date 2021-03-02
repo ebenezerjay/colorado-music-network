@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.typekit.net/iih3fai.css">
+    <title>About the Colorado Music Network</title>
+  </head>
+  <body>
+    <header class="flex">
+      <a href="./index.html"><img src="./images/header1.jpg" alt="Beautiful shot of the Rocky Mountains" class="header-img"></a>
+      <div class="flex headings-div">
+        <h1>Colorado Music Network</h1>
+        <h2 class="header-h2">Database of Artists and Venues in CO</h2>
+      </div>
+      <nav class="flex header-nav">
+        <ul class="flex header-nav-ul">
+          <ul class="flex header-nav-ul">
+            <li><a href="https://coloradomusicnetwork.indielivestreams.com">Home </a></li>
+            <li><a href="https://coloradomusicnetwork.indielivestreams.com/bands">Bands/Artists</a></li>
+            <li><a href="https://coloradomusicnetwork.indielivestreams.com/venues">Venues</a></li>
+            <li><a href="https://coloradomusicnetwork.indielivestreams.com/about"></a>About</li>
+            <li><a href="https://coloradomusicnetwork.indielivestreams.com/news"></a>News</li>
+          </ul>
+      </nav>
+    </header>
+    <aside class="flex">
+      <h3 class="search-bands-h3">Search Artists</h3>
+      <form action="" class="flex search-form">
+        <input type="text" placeholder="band/artist">
+        <input type="text" placeholder="location">
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+    </aside>
+    <main class="flex">
+      <section class="flex feature-section">
+        <h2 class="section-h2">Featured Artist</h2>
+        <h3 class="feature-h3">Poor Bodhi</h3>
+        <img src="./Poor-Bodhi.jpg" class="feature-img" alt="Super cool looking Poor Bodhi graphic">
+        <p class="feature-p">
+          <span class="sounds-span">Sounds for your dome:</span><br>  Poor Bodhi blends several genres to make a unique sound.  They formed in 2012 when singer Jenee 
+          Donnelson met guitarist Ebenezer Ingalsbe at the <a href="https://www.denverartsociety.org/">Denver Art Society</a>.  Soon Dustin Adams started sitting in on the drums (after another 
+          drummer didnt' work out).  And, after a couple different bassists in the first few years, David Baily joined to throw down the low end.
+          Find their music and follow them here:
+        </p>
+        <ul class="flex feature-ul">
+          <li class="feature-li"><a href="https://poorbodhi.wixsite.com/poorbodhi">Poor Bodhi Website</a></li>
+          <li class="feature-li"><a href="https://www.youtube.com/channel/UCbjVnGH9R5y1HxJKF446koQ">Poor Bodhi YouTube</a></li>
+          <li class="feature-li"><a href="https://www.facebook.com/PoorBodhi/">Poor Bodhi Facebook</a></li>
+        </ul>
+      </section>
+      <article class="flex">
+        <h2 class="article-h2">What's Good in Colorado</h2>
+      </article>
+      <section class="flex table-section">
+        <h2 class="table-h2">Bands/Artists</h2>
+        <table name="bandsTable" class="bands-table flex" id="bands-table">
+          <thead class="flex">
+            <th name="artistName" class="th-artist-name th-styles" id="th-artist-name-id">Artist/Band Name</th>
+            <th name="artistLocation" class="th-artist-location th-styles" id="th-artist-location-id">Homebase</th>
+            <th name="artistWebsite" class="th-artist-website th-styles" id="th-artist-website-id">Website</th>
+            <th name="artistDescription" class="th-artist-description th-styles" id="th-artist-description-id">Description</th>
+          </thead>
+          <tbody class="flex" id="data">
+
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer class="flex">
+      
+    </footer>
+  </body>
+  <script src="main.js"></script>
+</html>
