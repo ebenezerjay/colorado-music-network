@@ -7,16 +7,7 @@ $("#submit-artist-form-id").submit(function(e) {
   });
 });
 
-// sends ajax request to submit venue form
-$("#submit-venue-form-id").submit(function(e) {
-  e.preventDefault();
-  // Send the data using post with a response
-  $.post("submitVenue.php", $(this).serialize(), function() {
-    $(".submit-venue-form").html("Thanks for submiting!  Refresh the page and you'll see it listed.");
-  });
-});
-
-// gets all table data on page load
+// gets all artist table data on page load
 $(document).ready(function() {
 	$.post("getData.php", function(data) {
 		$("tbody").html(data);
