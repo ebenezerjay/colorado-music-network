@@ -35,38 +35,40 @@
       </form>
     </aside>
     <main class="flex">
-      <section class="flex feature-section">
-        <h2 class="section-h2">Featured Artist</h2>
-        <h3 class="feature-h3">Poor Bodhi</h3>
-        <img src="./Poor-Bodhi.jpg" class="feature-img" alt="Super cool looking Poor Bodhi graphic">
-        <p class="feature-p">
-          <span class="sounds-span">Sounds for your dome:</span><br>  Poor Bodhi blends several genres to make a unique sound.  They formed in 2012 when singer Jenee 
-          Donnelson met guitarist Ebenezer Ingalsbe at the <a href="https://www.denverartsociety.org/">Denver Art Society</a>.  Soon Dustin Adams started sitting in on the drums (after another 
-          drummer didnt' work out).  And, after a couple different bassists in the first few years, David Baily joined to throw down the low end.
-          Find their music and follow them here:
-        </p>
-        <ul class="flex feature-ul">
-          <li class="feature-li"><a href="https://poorbodhi.wixsite.com/poorbodhi">Poor Bodhi Website</a></li>
-          <li class="feature-li"><a href="https://www.youtube.com/channel/UCbjVnGH9R5y1HxJKF446koQ">Poor Bodhi YouTube</a></li>
-          <li class="feature-li"><a href="https://www.facebook.com/PoorBodhi/">Poor Bodhi Facebook</a></li>
-        </ul>
+      <section class="flex about-section">
+        <h2 class="about-h2">About Colorado Music Network</h2>
+        <div class="flex about-container">
+          <p class="flex about-paragraph">
+            When I first moved to Colorado (from Binghamton, NY) I was looking for some kind of website that had a list of venues.  I never found it.
+            At least there was nothing that was comprehensive.  Then within a year, I found myself on the other end, booking bands to play at
+            the Denver Art Society. Again, I found a variety of different sources, and none were what 
+            I was looking for.  This site aims to be what I was looking for.  A central place where anyone can see an updated list of bands and venues in
+            Colorado.  
+            - Ebenezer
+          </p>
+        </div>
       </section>
-      <article class="flex">
-        <h2 class="article-h2">What's Good in Colorado</h2>
-      </article>
-      <section class="flex table-section">
-        <h2 class="table-h2">Bands/Artists</h2>
-        <table name="bandsTable" class="bands-table flex" id="bands-table">
-          <thead class="flex">
-            <th name="artistName" class="th-artist-name th-styles" id="th-artist-name-id">Artist/Band Name</th>
-            <th name="artistLocation" class="th-artist-location th-styles" id="th-artist-location-id">Homebase</th>
-            <th name="artistWebsite" class="th-artist-website th-styles" id="th-artist-website-id">Website</th>
-            <th name="artistDescription" class="th-artist-description th-styles" id="th-artist-description-id">Description</th>
-          </thead>
-          <tbody class="flex" id="data">
-
-          </tbody>
-        </table>
+      <section class="flex about-submit-section">
+        <div class="flex form-div">
+          <h2 class="about-bands-h2">Submit Artists Here</h2>
+          <form action="" method="POST" class="flex submit-artist-form" id="submit-artist-form-id">
+            <input type="text" name="ArtistFormName" class="artist-name-input" placeholder="Enter Band/Artist name" required>
+            <input type="text" name="ArtistFormLocation" class="artist-location-input" placeholder="What part of CO is your home?">
+            <input type="url" name="ArtistFormUrl" class="artist-website-input" placeholder="Enter artist website">
+            <textarea name="ArtistFormDescription" class="artist-description-textarea" id="artist-description-id" placeholder="Enter brief description"></textarea>
+            <button type="submit" class="artist-submit-button" id="submit-artist-btn-id">Enter Artist Info</button>
+          </form>
+        </div>
+        <div class="flex form-div">
+          <h2 class="about-venues-h2">Submit Venues Here</h2>
+          <form action="" method="POST" class="flex submit-venue-form" id="submit-venue-form-id">
+            <input type="text" name="VenueFormName" class="venue-name-input" placeholder="Enter Venue name" required>
+            <input type="text" name="VenueFormLocation" class="venue-location-input" placeholder="Enter address of venue" required>
+            <input type="url" name="VenueFormUrl" class="venue-website-input" placeholder="Enter the venue website">
+            <textarea name="VenueFormDescription" class="venue-description-textarea" id="venue-description-id" placeholder="Enter brief description"></textarea>
+            <button type="submit" class="venue-submit-button">Enter Venue Info</button>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="flex">

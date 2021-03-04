@@ -103,7 +103,7 @@ input {
 aside {
   background-color: #fff;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin: 19px;
   grid-area: aside;
 }
 
@@ -221,6 +221,8 @@ footer {
 
 .artist-description-textarea,
 .venue-description-textarea {
+  height: 100px;
+  margin-top: 6px;
   width: 100%;
 }
 
@@ -237,6 +239,36 @@ footer {
   flex-wrap: wrap;
   margin: 5px;
   width: 45%;
+}
+
+.about-section {
+  flex-wrap: wrap;
+  margin: 21px;
+}
+
+.about-submit-section {
+  padding: 10px;
+}
+
+.about-h2 {
+  font-size: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+.about-bands-h2 {
+  color: #000000;
+}
+
+.about-bands-h2,
+.about-venues-h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.about-paragraph {
+  flex-wrap: wrap;
+  padding: 5%;
 }
 
 .feature-p {
