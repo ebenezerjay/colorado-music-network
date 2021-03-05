@@ -40,6 +40,7 @@ h1 {
 
 h2 {
   color: black;
+  font-size: 30px;
 }
 
 nav {
@@ -85,11 +86,15 @@ li:hover {
   color: #ff9d4d;
 }
 
+button:hover {
+  background-color: #ff9d4d;
+}
+
 main {
   flex-wrap: wrap;
   grid-area: main;
   justify-content: center;
-  margin: 20px, 0px, 0px, 0px;
+  margin: 20px 0px 0px 0px;
   width: 100%;
 }
 
@@ -103,8 +108,8 @@ input {
 aside {
   background-color: #fff;
   flex-wrap: wrap;
-  margin: 19px;
   grid-area: aside;
+  margin: 19px 5px 0px 5px;
 }
 
 section {
@@ -161,7 +166,8 @@ footer {
   grid-area: footer;
 }
 
-.bands-h2 {
+.bands-h2,
+.submit-venue-h2 {
   color: rgb(255, 255, 255);
   height: fit-content;
   text-align: center;
@@ -185,7 +191,6 @@ footer {
   background-color: white;
   border: 1px solid;
   box-shadow: black 4px 4px 4px;
-  font-size: 23px;
   justify-content: center;
   opacity: 70%;
   padding: 5px;
@@ -241,6 +246,16 @@ footer {
   width: 45%;
 }
 
+.news-article {
+  flex-wrap: wrap;
+}
+
+.news-paragraph {
+  color: black;
+  font-size: 20px;
+  padding: 4%;
+}
+
 .about-section {
   flex-wrap: wrap;
   margin: 21px;
@@ -251,7 +266,6 @@ footer {
 }
 
 .about-h2 {
-  font-size: 40px;
   text-align: center;
   width: 100%;
 }
