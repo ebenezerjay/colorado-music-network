@@ -13,3 +13,14 @@ $(document).ready(function() {
 		$("tbody").html(data);
 	});
 });
+
+// sends ajax call to search database and display results
+$( "#search-artist-form-id" ).submit(function(e) {
+  e.preventDefault();
+	// serialize the form data
+	let	formData = $(this).serialize();
+  // fetch the data using post
+	$.post( "searchArtist.php", formData,function(data) {
+		$("tbody").html(data);
+	});
+});

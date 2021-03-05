@@ -27,10 +27,10 @@
     </header>
     <aside class="flex">
       <h3 class="search-bands-h3">Search Artists</h3>
-      <form action="" class="flex search-form">
-        <input type="text" placeholder="band/artist">
-        <input type="text" placeholder="location">
-        <button type="submit" class="search-btn">Search</button>
+      <form action="" method="POST" class="flex search-form" id="search-artist-form-id">
+        <input name="searchArtistName" type="text" placeholder="band/artist">
+        <input name="searchArtistLocation" type="text" placeholder="location">
+        <button name="searchArtistSearchBtn" type="submit" class="search-btn">Search</button>
       </form>
     </aside>
     <main class="flex">
