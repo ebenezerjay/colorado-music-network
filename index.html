@@ -26,10 +26,13 @@
       </nav>
     </header>
     <aside class="flex">
-      <h3 class="search-bands-h3">Search Artists</h3>
+      <h3 class="search-bands-h3">Search The CMN Database</h3>
       <form action="" class="flex search-form">
+        <select name="searchSelect" class="search-select" id="search-options-id">
+         <option value="Artists/Bands">Artists/Bands</option>
+         <option value="Venues">Venues</option>
+        </select>
         <input type="text" placeholder="band/artist">
-        <input type="text" placeholder="location">
         <button type="submit" class="search-btn">Search</button>
       </form>
     </aside>

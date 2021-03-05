@@ -106,10 +106,14 @@ input {
 }
 
 aside {
-  background-color: #fff;
+  /* background-color: #fff; */
   flex-wrap: wrap;
   grid-area: aside;
+  height: 75%;
   margin: 19px 5px 0px 5px;
+  position: fixed;
+  top: 23%;
+  width: 15%;
 }
 
 section {
@@ -168,7 +172,7 @@ footer {
 
 .bands-h2,
 .submit-venue-h2 {
-  color: rgb(255, 255, 255);
+  color: #fff;
   height: fit-content;
   text-align: center;
   width: 100%;
@@ -199,7 +203,8 @@ footer {
 
 .search-bands-h3 {
   align-self: center;
-  color: black;
+  background-color: black;
+  color: rgb(255, 255, 255);
   height: fit-content;
   text-align: center;
   width: 100%;
@@ -214,6 +219,7 @@ footer {
 
 .search-form {
   align-self: flex-start;
+  background-color: black;
   flex-wrap: wrap;
   height: 30%;
   justify-content: center;
