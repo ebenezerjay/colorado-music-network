@@ -12,3 +12,22 @@ $(document).ready(function() {
 		$("tbody").html(data);
 	});
 });
+
+// displays the appropriate search form
+$(document).ready(function() {
+  $(".search-venue-form").css("display", "none");
+  $("#search-venue-btn-id").on("click", function() {
+    $(".search-venue-form").toggle();
+  });
+});
+
+// sends ajax call to search database and display results
+$( "#search-venue-form-id" ).submit(function(e) {
+  e.preventDefault();
+	// serialize the form data
+	let	formData = $(this).serialize();
+  // fetch the data using post
+	$.post( "searchVenue.php", formData,function(data) {
+		$("tbody").html(data);
+	});
+});
