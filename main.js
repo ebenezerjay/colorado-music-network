@@ -14,6 +14,18 @@ $(document).ready(function() {
 	});
 });
 
+// displays the appropriate search form
+$(document).ready(function() {
+  $(".search-artist-form").css("display", "none");
+  $(".search-venue-form").css("display", "none");
+  $("#search-artist-btn-id").on("click", function() {
+    $(".search-artist-form").toggle();
+  });
+  $("#search-venue-btn-id").on("click", function() {
+    $(".search-venue-form").toggle();
+  });
+});
+
 // sends ajax call to search database and display results
 $( "#search-artist-form-id" ).submit(function(e) {
   e.preventDefault();
@@ -24,3 +36,4 @@ $( "#search-artist-form-id" ).submit(function(e) {
 		$("tbody").html(data);
 	});
 });
+
