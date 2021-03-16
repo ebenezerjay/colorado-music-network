@@ -130,7 +130,6 @@ article {
 table {
   border: 1px solid;
   flex-wrap: wrap;
-  height: 100%;
   width: 100%;
 }
 
@@ -163,6 +162,7 @@ thead {
 tbody {
   border: 1px solid black;
   flex-wrap: wrap;
+  height: fit-content;
   width: 100%;
 }
 
@@ -217,18 +217,34 @@ footer {
   width: 99%;
 }
 
-.search-form {
+.search-artist-form,
+.search-venue-form {
   align-self: flex-start;
   background-color: black;
   flex-wrap: wrap;
-  height: 30%;
+  height: fit-content;
   justify-content: center;
   width: 100%;
 }
 
 .search-btn {
-  width: 50%;
+  height: 10%;
+  width: 90%;
 }
+
+.search-select {
+  height: 10%;
+  width: 100%;
+}
+
+.search-artist-form,
+.search-venue-form {
+  display: none;
+}
+
+/* .search-btn {
+  width: 50%;
+} */
 
 .artist-description-textarea,
 .venue-description-textarea {
