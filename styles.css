@@ -296,7 +296,37 @@ footer {
 
 .about-section {
   flex-wrap: wrap;
+  justify-content: center;
   margin: 21px;
+}
+
+.contact-article {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 88%;
+}
+
+.contact-form {
+  flex-wrap: wrap;
+  height: fit-content;
+}
+
+.contact-form-checkbox {
+  width: 50px;
+}
+
+.contact-form-btn,
+.contact-form-h4 {
+  margin: 7px;
+}
+
+.contact-form-h4 {
+  width: 100%;
+}
+
+.contact-form-btn {
+  height: 50px;
+  width: 20%;
 }
 
 .about-submit-section {
