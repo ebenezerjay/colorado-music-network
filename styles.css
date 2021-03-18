@@ -19,6 +19,22 @@ body {
   margin: 5px;
 }
 
+#news-body,
+#about-body {
+  background-color: black;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  grid-template-rows: 69% 64% 15%;
+  grid-template-areas: 
+  "header header "
+  "main main "
+  "main main "
+  "footer footer";
+  height: 100vh;
+  margin: 5px;
+}
+
 header {
   align-content: flex-start;
   background-image: url("./images/header1.jpg");
